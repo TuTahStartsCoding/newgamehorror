@@ -124,7 +124,7 @@ radius = 7.0
 height = 24.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_imcar"]
-radius = 51.022053
+radius = 103.2727
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x6b3o"]
 bg_color = Color(0.0352941, 0.0156863, 0.00784314, 0.427451)
