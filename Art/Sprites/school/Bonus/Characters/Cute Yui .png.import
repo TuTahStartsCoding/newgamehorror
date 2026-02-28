@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://br8ivj4npeble"
-path="res://.godot/imported/tile.png-16bf688854c4d0b7152796d9d904aa69.ctex"
+uid="uid://b57u7uokuv2yp"
+path="res://.godot/imported/Cute Yui .png-10dd4821a0af8cc908c31662ad50bd2a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Sprites/tile.png"
-dest_files=["res://.godot/imported/tile.png-16bf688854c4d0b7152796d9d904aa69.ctex"]
+source_file="res://Art/Sprites/school/Bonus/Characters/Cute Yui .png"
+dest_files=["res://.godot/imported/Cute Yui .png-10dd4821a0af8cc908c31662ad50bd2a.ctex"]
 
 [params]
 

@@ -61,12 +61,11 @@ amplitude = 12.0
 
 [node name="Welcome Label" type="Label" parent="Scene" unique_id=1012659538]
 texture_filter = 1
-offset_left = -59.0
-offset_top = -141.0
-offset_right = 209.0
-offset_bottom = -48.0
-text = "Welcome to the top-down project!
-WASD - Move
+offset_left = -53.0
+offset_top = -157.0
+offset_right = 107.0
+offset_bottom = -60.0
+text = "WASD - Move
 SPACE - Dash
 
 LMB - Punch
@@ -100,6 +99,7 @@ shadow_enabled = true
 texture = ExtResource("5_numcg")
 
 [node name="AreaBlocker" parent="Scene" unique_id=1057994998 instance=ExtResource("8_hs0w2")]
+visible = false
 
 [node name="AreaExit" parent="Scene" unique_id=715011631 instance=ExtResource("8_s7mva")]
 next_scene = ExtResource("10_hj57s")
