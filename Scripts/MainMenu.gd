@@ -21,7 +21,7 @@ func _start_menu_music():
 	menu_music = AudioStreamPlayer.new()
 	add_child(menu_music)
 	# ใช้เพลงเดียวกับ MainFloor
-	var music_file = load("res://Art/Audio/Effects/corridorsOgg.ogg")
+	var music_file = load("res://Art/Audio/corridorsOgg.ogg")
 	if music_file:
 		menu_music.stream = music_file
 		menu_music.volume_db = -5.0
