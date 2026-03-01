@@ -4,9 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dyb5iqfj3tmwj" path="res://Art/Sprites/light.png" id="2_fkmy2"]
 [ext_resource type="TileSet" uid="uid://b3n0bklwwny1b" path="res://Art/TileMap.tres" id="3_rc4vr"]
 [ext_resource type="AudioStream" uid="uid://b1lr5ey8e6pu3" path="res://Art/Audio/BasementOgg.ogg" id="4_2xlbv"]
-[ext_resource type="PackedScene" uid="uid://ctebcjca2wnsb" path="res://Scenes/Levels/floor05.tscn" id="7_0ys40"]
 [ext_resource type="PackedScene" uid="uid://b4l1gom0wsk8p" path="res://Scenes/Interactables/area_exit.tscn" id="7_rvt8c"]
-[ext_resource type="PackedScene" uid="uid://ctebcjca2wnsb" path="res://Scenes/Levels/floor05.tscn" id="8_uyi74"]
 [ext_resource type="PackedScene" uid="uid://ceoo6gamb4olk" path="res://Scenes/Interactables/Area_Blocker.tscn" id="9_dlkyf"]
 [ext_resource type="PackedScene" uid="uid://bvt7e871e6jeg" path="res://Scenes/NPC's/Enemy/Enemy.tscn" id="10_lltac"]
 [ext_resource type="PackedScene" uid="uid://bblpsy4fvi76f" path="res://Scenes/Interactables/Coin.tscn" id="11_1v5be"]
@@ -64,14 +62,14 @@ position = Vector2(2863, 866)
 
 [node name="AreaExit_Down" parent="Scene" unique_id=1371584530 instance=ExtResource("7_rvt8c")]
 position = Vector2(2866, 874)
-next_scene = ExtResource("7_0ys40")
+next_scene_path = "res://Scenes/Levels/VictoryScreen.tscn"
 
 [node name="AreaBlocker2" parent="Scene" unique_id=1613460830 instance=ExtResource("9_dlkyf")]
 position = Vector2(2958, 867)
 
 [node name="AreaExit_Up" parent="Scene" unique_id=1943138158 instance=ExtResource("7_rvt8c")]
 position = Vector2(2959, 874)
-next_scene = ExtResource("8_uyi74")
+next_scene_path = "res://Scenes/Levels/floor05.tscn"
 
 [node name="PointLight2D7" type="PointLight2D" parent="Scene" unique_id=1212264091]
 position = Vector2(1143, 581)

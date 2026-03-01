@@ -6,7 +6,6 @@
 [ext_resource type="AudioStream" uid="uid://b1lr5ey8e6pu3" path="res://Art/Audio/BasementOgg.ogg" id="4_vpsky"]
 [ext_resource type="PackedScene" uid="uid://ceoo6gamb4olk" path="res://Scenes/Interactables/Area_Blocker.tscn" id="5_vwjck"]
 [ext_resource type="PackedScene" uid="uid://b4l1gom0wsk8p" path="res://Scenes/Interactables/area_exit.tscn" id="6_obj47"]
-[ext_resource type="PackedScene" uid="uid://b00wrkw0gl236" path="res://Scenes/Levels/Basement04.tscn" id="8_u348q"]
 [ext_resource type="PackedScene" uid="uid://bvt7e871e6jeg" path="res://Scenes/NPC's/Enemy/Enemy.tscn" id="9_f82bx"]
 [ext_resource type="PackedScene" uid="uid://bblpsy4fvi76f" path="res://Scenes/Interactables/Coin.tscn" id="10_vbhoq"]
 [ext_resource type="PackedScene" uid="uid://bvg5dny32iw0x" path="res://Scenes/Player/Player.tscn" id="11_lvfh7"]
@@ -63,14 +62,14 @@ position = Vector2(1229, -287)
 
 [node name="AreaExit_Down" parent="Scene" unique_id=1371584530 instance=ExtResource("6_obj47")]
 position = Vector2(1232, -279)
-next_scene = ExtResource("8_u348q")
+next_scene_path = "res://Scenes/Levels/Basement03.tscn"
 
 [node name="AreaBlocker2" parent="Scene" unique_id=1613460830 instance=ExtResource("5_vwjck")]
 position = Vector2(1231, -989)
 
 [node name="AreaExit_Up" parent="Scene" unique_id=1943138158 instance=ExtResource("6_obj47")]
 position = Vector2(1232, -982)
-next_scene = ExtResource("8_u348q")
+next_scene_path = "res://Scenes/Levels/floor02.tscn"
 
 [node name="NPCs" type="Node" parent="." unique_id=682577358]
 

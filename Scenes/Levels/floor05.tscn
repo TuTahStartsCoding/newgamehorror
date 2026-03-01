@@ -7,7 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://dyb5iqfj3tmwj" path="res://Art/Sprites/light.png" id="5_qvaua"]
 [ext_resource type="PackedScene" uid="uid://ceoo6gamb4olk" path="res://Scenes/Interactables/Area_Blocker.tscn" id="6_tgou5"]
 [ext_resource type="PackedScene" uid="uid://b4l1gom0wsk8p" path="res://Scenes/Interactables/area_exit.tscn" id="7_tm3wo"]
-[ext_resource type="PackedScene" uid="uid://c5btk4icxp61c" path="res://Scenes/Levels/VictoryScreen.tscn" id="8_a581t"]
 [ext_resource type="TileSet" uid="uid://b3n0bklwwny1b" path="res://Art/TileMap.tres" id="9_kg5bp"]
 [ext_resource type="Script" uid="uid://sdgifyh2ndq4" path="res://Scripts/QuestGeneral/Quest.gd" id="11_6w52w"]
 [ext_resource type="AudioStream" uid="uid://bia7rrlxphfg2" path="res://Art/Audio/corridorsOgg.ogg" id="12_4bgrc"]
@@ -457,11 +456,11 @@ position = Vector2(333, 168)
 
 [node name="AreaExit_Up" parent="Scene" unique_id=715011631 instance=ExtResource("7_tm3wo")]
 position = Vector2(-81, 335)
-next_scene = ExtResource("8_a581t")
+next_scene_path = "res://Scenes/Levels/VictoryScreen.tscn"
 
 [node name="AreaExit_Down" parent="Scene" unique_id=1657384817 instance=ExtResource("7_tm3wo")]
 position = Vector2(336, 170)
-next_scene = ExtResource("8_a581t")
+next_scene_path = "res://Scenes/Levels/Basement01.tscn"
 
 [node name="TileMap" type="TileMapLayer" parent="Scene" unique_id=255868594]
 z_index = -1
