@@ -481,5 +481,6 @@ quest_objective = Array[String](["Expore the corridoors", "Find a way past the e
 stream = ExtResource("12_uqsx1")
 volume_db = -1.0
 autoplay = true
+bus = &"Music"
 
 [node name="Score_UI" parent="." unique_id=2070936427 instance=ExtResource("13_1lmhj")]

@@ -56,6 +56,7 @@ tile_set = ExtResource("3_rc4vr")
 stream = ExtResource("4_2xlbv")
 volume_db = -3.0
 autoplay = true
+bus = &"Music"
 
 [node name="AreaBlocker" parent="Scene" unique_id=1534660845 instance=ExtResource("9_dlkyf")]
 position = Vector2(2863, 866)

@@ -21,35 +21,27 @@ position = Vector2(-85, -117)
 [node name="NPCs" type="Node" parent="." unique_id=234943041]
 
 [node name="Enemy" parent="NPCs" unique_id=235690390 instance=ExtResource("2_og0ie")]
-visible = false
 position = Vector2(67, 71)
 
 [node name="Enemy2" parent="NPCs" unique_id=985571059 instance=ExtResource("2_og0ie")]
-visible = false
 position = Vector2(-171, 71)
 
 [node name="Enemy3" parent="NPCs" unique_id=1589834221 instance=ExtResource("2_og0ie")]
-visible = false
 position = Vector2(253, 229)
 
 [node name="Enemy4" parent="NPCs" unique_id=2143948908 instance=ExtResource("2_og0ie")]
-visible = false
 position = Vector2(-445, 642)
 
 [node name="Enemy5" parent="NPCs" unique_id=886831654 instance=ExtResource("2_og0ie")]
-visible = false
 position = Vector2(-1046, -212)
 
 [node name="Enemy6" parent="NPCs" unique_id=313282909 instance=ExtResource("2_og0ie")]
-visible = false
 position = Vector2(185, 689)
 
 [node name="Enemy7" parent="NPCs" unique_id=442209116 instance=ExtResource("2_og0ie")]
-visible = false
 position = Vector2(279, -313)
 
 [node name="Enemy8" parent="NPCs" unique_id=1335449064 instance=ExtResource("2_og0ie")]
-visible = false
 position = Vector2(-690, 184)
 
 [node name="Pickups" type="Node" parent="." unique_id=211693519]
@@ -395,5 +387,6 @@ quest_objective = Array[String](["Expore the corridoors", "Find a way past the e
 stream = ExtResource("12_cxsmh")
 volume_db = -1.0
 autoplay = true
+bus = &"Music"
 
 [node name="Score_UI" parent="." unique_id=2070936427 instance=ExtResource("13_jwitt")]

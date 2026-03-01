@@ -39,11 +39,13 @@ func play_sound(audiostream : AudioStreamOggVorbis, offset : float, volume : flo
 	available_player.stream = audiostream
 	available_player.pitch_scale = randf_range(0.9, 1.1)
 	available_player.volume_db = volume
+	available_player.bus = "SFX"
 	available_player.play(offset)
 
 #Instantiate audiostreams into the scene
 func initiate_audio_stream():
 	for i in range(starting_players):
 		var player = AudioStreamPlayer.new()
+		player.bus = "SFX"
 		audio_players.append(player)
 		add_child(player)
