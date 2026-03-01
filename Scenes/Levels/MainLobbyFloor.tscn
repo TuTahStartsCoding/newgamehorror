@@ -67,7 +67,7 @@ offset_bottom = -60.0
 text = "WASD - Move
 SPACE - Dash
 
-LMB & P - Punch
+LMB & J - Punch
 RMB & K- Spinning kick
 *Collect coins to heal*"
 label_settings = ExtResource("6_tnka6")
