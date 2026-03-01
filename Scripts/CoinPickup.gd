@@ -1,9 +1,8 @@
 # Scripts/CoinPickup.gd
-# แก้ไข: ค้นหา Player โดยตรงแทนการใช้ body parameter
 extends Sprite2D
 
 @export var value = 5
-@export var heal_amount : int = 10  # ปรับได้ใน Inspector
+@export var heal_amount : int = 10
 
 var time_passed = 0
 var initial_position := Vector2.ZERO
@@ -13,8 +12,8 @@ var initial_position := Vector2.ZERO
 func _ready():
 	initial_position = position
 
-func _process(_delta):
-	body_hover(_delta)
+func _process(delta):
+	body_hover(delta)
 
 func body_hover(delta):
 	time_passed += delta
@@ -23,13 +22,10 @@ func body_hover(delta):
 
 func _on_area_2d_body_entered(body):
 	if body.is_in_group("Player"):
-		# เพิ่มเงิน
 		GameManager.add_money(value)
 		
-		# Heal โดยค้นหา Player จาก group
-		var player = get_tree().get_first_node_in_group("Player")
-		if player and player.has_method("_heal"):
-			player._heal(heal_amount)
+		if body.has_method("_heal"):
+			body._heal(heal_amount)
 		
 		AudioManager.play_sound(AudioManager.COIN_PICK, 0, -10)
 		queue_free()

@@ -19,18 +19,16 @@ func _process(_delta):
 
 func init_character():
 	healthbar.max_value = health
-	# ถ้าเป็น Player และมี HP ที่บันทึกไว้ และไม่ได้มาจาก MainFloor
+	
 	if is_in_group("Player"):
-		if GameManager.from_main_floor or GameManager.player_health <= 0:
-			# มาจาก MainFloor หรือเพิ่งเริ่ม → เลือดเต็ม
+		if GameManager.heal_on_next_level or GameManager.player_health <= 0:
 			healthbar.value = health
 			GameManager.player_health = health
 		else:
-			# มาจากด่านอื่น → ใช้ HP ที่บันทึกไว้
 			health = GameManager.player_health
 			healthbar.value = health
-		# reset flag หลังจากใช้แล้ว
-		GameManager.from_main_floor = false
+		
+		GameManager.heal_on_next_level = false
 	else:
 		healthbar.value = health
 

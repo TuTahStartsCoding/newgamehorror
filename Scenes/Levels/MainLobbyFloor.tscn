@@ -8,14 +8,15 @@
 [ext_resource type="LabelSettings" uid="uid://da8inon5cmt2r" path="res://Art/Fonts/pixelized_label.tres" id="6_tnka6"]
 [ext_resource type="Texture2D" uid="uid://dyb5iqfj3tmwj" path="res://Art/Sprites/light.png" id="7_ci2vi"]
 [ext_resource type="PackedScene" uid="uid://ceoo6gamb4olk" path="res://Scenes/Interactables/Area_Blocker.tscn" id="8_1eywl"]
-[ext_resource type="PackedScene" uid="uid://b4l1gom0wsk8p" path="res://Scenes/Interactables/area_exit.tscn" id="9_k0uy3"]
-[ext_resource type="PackedScene" uid="uid://bg6kmajiverxj" path="res://Scenes/Levels/floor02.tscn" id="10_klyq0"]
-[ext_resource type="PackedScene" uid="uid://bt5yicfpmnlwk" path="res://Scenes/Levels/Basement01.tscn" id="10_mf3y8"]
+[ext_resource type="PackedScene" uid="uid://ceoo6gamb4olk" path="res://Scenes/Interactables/Area_Blocker.tscn" id="9_k0uy3"]
+[ext_resource type="PackedScene" uid="uid://c5btk4icxp61c" path="res://Scenes/Levels/VictoryScreen.tscn" id="10_klyq0"]
+[ext_resource type="PackedScene" uid="uid://c5btk4icxp61c" path="res://Scenes/Levels/VictoryScreen.tscn" id="10_mf3y8"]
 [ext_resource type="TileSet" uid="uid://b3n0bklwwny1b" path="res://Art/TileMap.tres" id="11_icaeq"]
 [ext_resource type="PackedScene" uid="uid://48vtm5vekhaq" path="res://Scenes/QuestUpdate.tscn" id="12_tij5p"]
 [ext_resource type="Script" uid="uid://sdgifyh2ndq4" path="res://Scripts/QuestGeneral/Quest.gd" id="13_2i1ty"]
 [ext_resource type="AudioStream" uid="uid://bia7rrlxphfg2" path="res://Art/Audio/corridorsOgg.ogg" id="14_g6mg3"]
 [ext_resource type="PackedScene" uid="uid://b6xb8nhlqtuhf" path="res://Scenes/ScoreTracker.tscn" id="15_lsu4l"]
+
 
 [node name="Scene_Root" type="Node2D" unique_id=777561992]
 texture_filter = 1
@@ -107,12 +108,10 @@ position = Vector2(333, 168)
 
 [node name="AreaExit_Up" parent="Scene" unique_id=715011631 instance=ExtResource("9_k0uy3")]
 next_scene = ExtResource("10_klyq0")
-is_main_floor_exit = true
 
 [node name="AreaExit_Down" parent="Scene" unique_id=1657384817 instance=ExtResource("9_k0uy3")]
 position = Vector2(336, 170)
 next_scene = ExtResource("10_mf3y8")
-is_main_floor_exit = true
 
 [node name="TileMap" type="TileMapLayer" parent="Scene" unique_id=255868594]
 z_index = -1

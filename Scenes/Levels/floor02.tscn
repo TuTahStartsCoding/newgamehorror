@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://bg6kmajiverxj"]
+[gd_scene format=4 uid="uid://k3ui5byc0061"]
 
 [ext_resource type="PackedScene" uid="uid://bvg5dny32iw0x" path="res://Scenes/Player/Player.tscn" id="1_pg8ju"]
 [ext_resource type="PackedScene" uid="uid://bvt7e871e6jeg" path="res://Scenes/NPC's/Enemy/Enemy.tscn" id="2_og0ie"]
@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dyb5iqfj3tmwj" path="res://Art/Sprites/light.png" id="5_hay78"]
 [ext_resource type="PackedScene" uid="uid://ceoo6gamb4olk" path="res://Scenes/Interactables/Area_Blocker.tscn" id="6_wkd3a"]
 [ext_resource type="PackedScene" uid="uid://b4l1gom0wsk8p" path="res://Scenes/Interactables/area_exit.tscn" id="7_003r8"]
-[ext_resource type="PackedScene" uid="uid://bt5yicfpmnlwk" path="res://Scenes/Levels/Basement01.tscn" id="8_exo3q"]
+[ext_resource type="PackedScene" uid="uid://dl6entujri1u0" path="res://Scenes/Levels/floor04.tscn" id="8_pwqo5"]
 [ext_resource type="TileSet" uid="uid://b3n0bklwwny1b" path="res://Art/TileMap.tres" id="9_g0orc"]
 [ext_resource type="PackedScene" uid="uid://48vtm5vekhaq" path="res://Scenes/QuestUpdate.tscn" id="10_lu477"]
 [ext_resource type="Script" uid="uid://sdgifyh2ndq4" path="res://Scripts/QuestGeneral/Quest.gd" id="11_fysk4"]
@@ -364,11 +364,10 @@ texture = ExtResource("5_hay78")
 position = Vector2(333, 168)
 
 [node name="AreaExit_Up" parent="Scene" unique_id=715011631 instance=ExtResource("7_003r8")]
-next_scene = ExtResource("8_exo3q")
+next_scene = ExtResource("8_pwqo5")
 
 [node name="AreaExit_Down" parent="Scene" unique_id=1657384817 instance=ExtResource("7_003r8")]
 position = Vector2(336, 170)
-next_scene = ExtResource("8_exo3q")
 
 [node name="TileMap" type="TileMapLayer" parent="Scene" unique_id=255868594]
 z_index = -1
